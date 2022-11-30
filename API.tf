@@ -28,3 +28,9 @@ resource "local_file" "Object-Variable" {
 content = var.Object-Type.name
 filename ="ObjectVariable.html"
 }
+
+
+output "Output-Block-Object" {
+    value = local_file.Object-Variable.content
+    description = "Content of Object Variable File"
+}
